@@ -1,0 +1,14 @@
+<section class="reviews">
+    {% for review in site.data.reviews %}
+    <div class="review">
+        <ul>
+            {% for i in (1..5) %}
+            <li>
+                <img src="/assets/star.png" />
+            </li>
+            {% endfor %}
+        </ul>
+        <p>&ldquo;{{ review.review }}&rdquo;</p>
+    </div>
+    {% endfor %}
+</section>

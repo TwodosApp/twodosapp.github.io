@@ -1,0 +1,10 @@
+<footer>
+    <ul>
+        {% for item in site.data.menu %}
+        <li>
+            <a href="{{ item.url}}" title="{{ item.label }}">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <p>{{ site.data.content.footer }}</p>
+</footer>
